@@ -15,11 +15,14 @@
     <input value="REST_POST" type="submit">
 </form>
 <p2>&nbsp;</p2>
-<form action="/user" method="delete">
+<form action="/user" method="post">
+<!--    <input name="_method" type="hidden" value="DELETE">-->
+    <input name="_m" type="hidden" value="DELETE">
     <input value="REST_DELETE" type="submit">
 </form>
 <p2>&nbsp;</p2>
-<form action="/user" method="put">
+<form action="/user" method="post">
+    <input name="_method" type="hidden" value="PUT">
     <input value="REST_PUT" type="submit">
 </form>
 
