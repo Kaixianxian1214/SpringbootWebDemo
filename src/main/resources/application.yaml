@@ -1,6 +1,6 @@
-spring:
+#spring:
 #  mvc:
 #    static-path-pattern: /res/**  # 会导致welcome page功能失效
-  web:
-    resources:
-      static-locations: classpath:/dynamic
+#  web:
+#    resources:
+#      static-locations: classpath:/dynamic
