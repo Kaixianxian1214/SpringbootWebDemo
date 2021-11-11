@@ -4,3 +4,9 @@
 #  web:
 #    resources:
 #      static-locations: classpath:/dynamic
+
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
