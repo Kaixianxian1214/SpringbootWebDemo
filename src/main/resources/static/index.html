@@ -6,25 +6,45 @@
 </head>
 <body>
 <h1>SpringBoot2 入门</h1>
-<h2>测试Rest风格：</h2>
+<h4>测试Rest风格：</h4>
 <form action="/user" method="get">
     <input value="REST-GET" type="submit">
 </form>
-<p2>&nbsp;</p2>
+<br>
 <form action="/user" method="post">
     <input value="REST_POST" type="submit">
 </form>
-<p2>&nbsp;</p2>
+<br>
 <form action="/user" method="post">
 <!--    <input name="_method" type="hidden" value="DELETE">-->
     <input name="_m" type="hidden" value="DELETE">
     <input value="REST_DELETE" type="submit">
 </form>
-<p2>&nbsp;</p2>
+<br>
 <form action="/user" method="post">
     <input name="_method" type="hidden" value="PUT">
     <input value="REST_PUT" type="submit">
 </form>
+<br>
 
+<h4>测试基本注解</h4>
+<ul>
+    <a href="/car/3/zhangSan?inters=soccer&age=10">/car</a>
+    <li>@PathVariable(路径变量)</li>
+    <li>@RequestHeader(获取请求头)</li>
+    <li>@RequestParam(获取请求参数)</li>
+    <li>@CookieValue(获取cookie值)</li>
+    <li>@RequestAttribute(过去request域属性)</li>
+    <li>@RequestBody(获取请求体)</li>
+    <li>@MatrixVariable(矩阵变量)</li>
+</ul>
+<ul>
+    <form action="/save" method="post">
+        测试@RequestBody获取数据<br>
+        用户名：<input name="username"><br>
+        邮箱：<input name="email">
+        <input type="submit" value="提交">
+    </form>
+</ul>
 </body>
 </html>
