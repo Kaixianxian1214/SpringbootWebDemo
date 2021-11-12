@@ -29,7 +29,7 @@
 
 <h4>测试基本注解</h4>
 <ul>
-    <a href="/car/3/zhangSan?inters=soccer&age=10">/car</a>
+    <a href="/car/3/zhangSan?inters=soccer">/car</a>
     <li>@PathVariable(路径变量)</li>
     <li>@RequestHeader(获取请求头)</li>
     <li>@RequestParam(获取请求参数)</li>
@@ -46,5 +46,13 @@
         <input type="submit" value="提交">
     </form>
 </ul>
+<h4>测试封装POJO：</h4>
+<form action="/saveuser" method="post">
+    姓名：<input name="userName" value="zhangSan"><br>
+    年龄：<input name="age" value="18"><br>
+    生日：<input name="birth" value="2019/10/12"><br>
+    宠物姓名：<input name="pet" value="miaomiao,2"><br>
+    <input type="submit" value="保存">
+</form>
 </body>
 </html>
